@@ -13,6 +13,14 @@ vnets = {
     address_space       = ["10.0.0.0/16"]
 
   }
+
+  vnet1 = {
+    name                = "dev-vnet"
+    location            = "westus"
+    resource_group_name = "prod-rg"
+    address_space       = ["10.0.0.1/16"]
+
+  }
 }
 pips = {
   pip1 = {
