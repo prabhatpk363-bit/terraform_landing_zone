@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    runs-on: [self-hosted, windows]
+    runs-on: [self-hosted, windows,X64]
 
     steps:
       - name: Check PowerShell
