@@ -1,0 +1,24 @@
+name: Windows Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: [self-hosted, windows]
+
+    steps:
+      - name: Check PowerShell
+        shell: powershell
+        run: |
+          $PSVersionTable
+
+      - name: Check hostname
+        shell: powershell
+        run: |
+          hostname
+
+      - name: Check user
+        shell: powershell
+        run: |
+          whoami
